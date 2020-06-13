@@ -38,6 +38,7 @@ int isCyclicDisconntected(vector<int> adj[],int V)
 int main()
 {
 	int n,m;
+	cout<<"Enter n and m:";
 	cin>>n>>m;
 	vector<pair<int,int> > product[n*m];
 	bool f=0,f2=0;
@@ -372,7 +373,7 @@ int main()
     for(int i=0;i<n*m;i++)
 	{
         int w;
-        cout<<i<<" ";
+        //cout<<i<<" ";
         c1=0;c2=0;c3=0;c4=0;c5=0;
         for(int j=0;j<product[i].size();j++) 
         { 
@@ -396,7 +397,7 @@ int main()
 	        else
             	proper[w]=1;
 		}
-		cout<<endl;
+		//cout<<endl;
 		if(c5==0)
 			missing[5]++;
 		else if(c4==0)
